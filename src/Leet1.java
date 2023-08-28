@@ -5,13 +5,13 @@ import java.util.Map;
 public class Leet1 {
     public static void main(String[] args) {
         int[] nums = {2,7,11,15};
-        Solution solution = new Solution();
+        Solution1 solution = new Solution1();
         int[] res = solution.twoSum(nums,9);
         System.out.println("res = " + Arrays.toString(res));
     }
 }
 
-class Solution {
+class Solution1 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> m = new HashMap<Integer,Integer>();
         for(int i=0;i<nums.length;i++){
